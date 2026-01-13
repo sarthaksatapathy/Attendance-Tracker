@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="container">
+{% if student %}
+  <h2>{{ student[1] }}</h2>
+
+  <p><b>Enrollment No:</b> {{ student[0] }}</p>
+  <p><b>Total Classes:</b> {{ student[2] }}</p>
+  <p><b>Classes Attended:</b> {{ student[3] }}</p>
+
+  {% set percent = ((student[3] / student[2]) * 100) | round(2) %}
+  <p><b>Attendance Percentage:</b> {{ percent }}%</p>
+
+  {% if percent >= 85 %}
+    <p class="status-good"> Excellent Attendance</p>
+
+  {% elif percent >= 75 %}
+    <p class="status-warning"> Warning Zone</p>
+
+  {% else %}
+    <p class="status-bad"> Irregular Student</p>
+  {% endif %}
+
+{% else %}
+  <p style="text-align:center; color:red;">
+     No student record found
+  </p>
+{% endif %}
+</div>

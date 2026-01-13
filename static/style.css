@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main card container */
+.container {
+    width: 420px;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    color: #374151;
+    font-size: 15px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 12px 0;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Divider */
+hr {
+    margin: 22px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Attendance status styles */
+.status-good {
+    color: #16a34a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.status-warning {
+    color: #f59e0b;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.status-bad {
+    color: #dc2626;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}

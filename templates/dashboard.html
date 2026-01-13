@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="container">
+  <h2>Attendance Dashboard</h2>
+
+  <h3>Add Student</h3>
+  <form action="/add_student" method="post">
+    <input name="enroll" placeholder="Enrollment Number" required>
+    <input name="name" placeholder="Student Name" required>
+    <input name="total" type="number" placeholder="Total Classes" required>
+    <input name="attended" type="number" placeholder="Classes Attended" required>
+    <button>Add Student</button>
+  </form>
+
+  <hr>
+
+  <h3>Search Student</h3>
+  <form action="/student" method="post">
+    <input name="enroll" placeholder="Enrollment Number" required>
+    <button>Search</button>
+  </form>
+</div>
